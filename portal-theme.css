@@ -1,116 +1,181 @@
-/* ===============================
-SOFTWARE@WORK PORTAL THEME
-=============================== */
+/* =====================================================
+SOFTWARE@WORK CUSTOMER PORTAL THEME
+===================================================== */
 
-/* Background */
+/* ---------- PAGE ---------- */
+
+html,
 body {
-background:
-radial-gradient(circle at 15% 85%, rgba(139,92,246,.12), transparent 35%),
-radial-gradient(circle at 85% 85%, rgba(139,92,246,.12), transparent 35%),
-linear-gradient(180deg,#fbfbff,#f4f1fb) !important;
+min-height: 100vh !important;
+font-family: "Segoe UI", Arial, sans-serif !important;
 
 ```
-font-family: "Segoe UI", Arial, sans-serif !important;
+background:
+    radial-gradient(circle at 15% 85%, rgba(139,92,246,.10), transparent 35%),
+    radial-gradient(circle at 85% 85%, rgba(139,92,246,.10), transparent 35%),
+    linear-gradient(180deg,#fbfbff,#f4f1fb) !important;
 ```
 
 }
 
-/* Dark Header */
+/* ---------- NAVBAR ---------- */
+
 .navbar,
 .navbar-inverse,
 .menu .navbar.navbar-inverse {
 background: linear-gradient(
 90deg,
-#1f2937 0%,
-#334155 100%
+#1f2937,
+#334155
 ) !important;
 
 ```
 border: none !important;
-box-shadow: 0 3px 10px rgba(0,0,0,.15);
+
+box-shadow: 0 3px 12px rgba(0,0,0,.15) !important;
 ```
 
 }
 
-/* Logo */
+/* ---------- LOGO ---------- */
+
 .navbar-brand img,
 .logo img {
 max-height: 55px !important;
 }
 
-/* Main Login Form */
-form.form-horizontal {
-background: #ffffff !important;
+/* ---------- REMOVE VTIGER OUTER BOX ---------- */
+
+.panel,
+.panel-default {
+background: transparent !important;
+border: none !important;
+box-shadow: none !important;
+padding: 0 !important;
+}
+
+/* ---------- WELCOME CARD ---------- */
+
+body::before {
 
 ```
-border-radius: 16px !important;
+content:
+"Welcome to Software@Work\A Customer Portal\A\A Access your tickets, knowledge base, and more.";
 
-padding: 40px !important;
+white-space: pre-line;
+
+display: block;
+
+width: 900px;
+
+margin: 35px auto;
+
+background: #ffffff;
+
+border-radius: 18px;
+
+padding: 45px;
+
+text-align: center;
+
+font-size: 18px;
+
+font-weight: 400;
+
+color: #6b7280;
+
+line-height: 1.8;
 
 box-shadow:
-    0 10px 30px rgba(0,0,0,.08),
-    0 20px 60px rgba(0,0,0,.08) !important;
-
-border: 1px solid rgba(0,0,0,.04) !important;
-
-margin-top: 80px !important;
+    0 10px 35px rgba(0,0,0,.08);
 ```
 
 }
 
-/* Login Title */
+/* ---------- LOGIN FORM CARD ---------- */
+
+form.form-horizontal {
+
+```
+background: #ffffff !important;
+
+border-radius: 18px !important;
+
+padding: 40px !important;
+
+box-shadow:
+    0 10px 35px rgba(0,0,0,.08),
+    0 20px 60px rgba(0,0,0,.05) !important;
+
+border: 1px solid rgba(0,0,0,.04) !important;
+
+max-width: 900px !important;
+
+margin: 30px auto !important;
+```
+
+}
+
+/* ---------- LOGIN TITLE ---------- */
+
 form.form-horizontal h1,
 form.form-horizontal h2,
 form.form-horizontal h3 {
-text-align: center !important;
 
 ```
+text-align: center !important;
+
 color: #1f2937 !important;
 
-font-weight: 700 !important;
+font-size: 36px !important;
 
-font-size: 38px !important;
+font-weight: 700 !important;
 
 margin-bottom: 15px !important;
 ```
 
 }
 
-/* Purple Accent Line */
+/* ---------- PURPLE LINE ---------- */
+
 form.form-horizontal h1::after,
 form.form-horizontal h2::after,
 form.form-horizontal h3::after {
-content: "";
 
 ```
+content: "";
+
 display: block;
 
 width: 70px;
 
 height: 4px;
 
-margin: 20px auto;
-
 background: #8b5cf6;
 
 border-radius: 20px;
+
+margin: 15px auto 0;
 ```
 
 }
 
-/* Labels */
+/* ---------- LABELS ---------- */
+
 label {
+
+```
 color: #111827 !important;
 
-```
-font-weight: 600 !important;
-
 font-size: 15px !important;
+
+font-weight: 600 !important;
 ```
 
 }
 
-/* Inputs */
+/* ---------- INPUTS ---------- */
+
 .form-control,
 input[type=text],
 input[type=email],
@@ -130,7 +195,8 @@ transition: all .25s ease;
 
 }
 
-/* Input Focus */
+/* ---------- INPUT FOCUS ---------- */
+
 .form-control:focus,
 input:focus {
 
@@ -143,7 +209,8 @@ box-shadow:
 
 }
 
-/* Sign In Button */
+/* ---------- BUTTON ---------- */
+
 .btn-success,
 button[type=submit] {
 
@@ -156,9 +223,9 @@ border-radius: 10px !important;
 
 padding: 12px 30px !important;
 
-font-weight: 600 !important;
-
 font-size: 15px !important;
+
+font-weight: 600 !important;
 
 transition: all .2s ease;
 ```
@@ -177,54 +244,12 @@ box-shadow:
 
 }
 
-/* Links */
+/* ---------- LINKS ---------- */
+
 a {
 color: #3b82f6 !important;
 }
 
 a:hover {
 color: #2563eb !important;
-}
-
-/* Card Hover Effect */
-.panel,
-.panel-default {
-
-```
-border-radius: 16px !important;
-
-border: none !important;
-
-box-shadow:
-    0 10px 35px rgba(0,0,0,.08) !important;
-```
-
-}
-/* Welcome Banner */
-
-body::before {
-    content: "Welcome to Software@Work\A Customer Portal\A\A Access your tickets, knowledge base, and more.";
-    white-space: pre-line;
-
-    display: block;
-
-    width: 850px;
-
-    margin: 40px auto 30px auto;
-
-    background: #ffffff;
-
-    border-radius: 16px;
-
-    padding: 35px;
-
-    text-align: center;
-
-    font-size: 18px;
-
-    color: #6b7280;
-
-    line-height: 1.8;
-
-    box-shadow: 0 10px 35px rgba(0,0,0,.08);
 }
