@@ -1,0 +1,202 @@
+/* ===============================
+SOFTWARE@WORK PORTAL THEME
+=============================== */
+
+/* Background */
+body {
+background:
+radial-gradient(circle at 15% 85%, rgba(139,92,246,.12), transparent 35%),
+radial-gradient(circle at 85% 85%, rgba(139,92,246,.12), transparent 35%),
+linear-gradient(180deg,#fbfbff,#f4f1fb) !important;
+
+```
+font-family: "Segoe UI", Arial, sans-serif !important;
+```
+
+}
+
+/* Dark Header */
+.navbar,
+.navbar-inverse,
+.menu .navbar.navbar-inverse {
+background: linear-gradient(
+90deg,
+#1f2937 0%,
+#334155 100%
+) !important;
+
+```
+border: none !important;
+box-shadow: 0 3px 10px rgba(0,0,0,.15);
+```
+
+}
+
+/* Logo */
+.navbar-brand img,
+.logo img {
+max-height: 55px !important;
+}
+
+/* Main Login Form */
+form.form-horizontal {
+background: #ffffff !important;
+
+```
+border-radius: 16px !important;
+
+padding: 40px !important;
+
+box-shadow:
+    0 10px 30px rgba(0,0,0,.08),
+    0 20px 60px rgba(0,0,0,.08) !important;
+
+border: 1px solid rgba(0,0,0,.04) !important;
+
+margin-top: 80px !important;
+```
+
+}
+
+/* Login Title */
+form.form-horizontal h1,
+form.form-horizontal h2,
+form.form-horizontal h3 {
+text-align: center !important;
+
+```
+color: #1f2937 !important;
+
+font-weight: 700 !important;
+
+font-size: 38px !important;
+
+margin-bottom: 15px !important;
+```
+
+}
+
+/* Purple Accent Line */
+form.form-horizontal h1::after,
+form.form-horizontal h2::after,
+form.form-horizontal h3::after {
+content: "";
+
+```
+display: block;
+
+width: 70px;
+
+height: 4px;
+
+margin: 20px auto;
+
+background: #8b5cf6;
+
+border-radius: 20px;
+```
+
+}
+
+/* Labels */
+label {
+color: #111827 !important;
+
+```
+font-weight: 600 !important;
+
+font-size: 15px !important;
+```
+
+}
+
+/* Inputs */
+.form-control,
+input[type=text],
+input[type=email],
+input[type=password] {
+
+```
+height: 52px !important;
+
+border-radius: 10px !important;
+
+border: 1px solid #d1d5db !important;
+
+box-shadow: none !important;
+
+transition: all .25s ease;
+```
+
+}
+
+/* Input Focus */
+.form-control:focus,
+input:focus {
+
+```
+border-color: #8b5cf6 !important;
+
+box-shadow:
+    0 0 0 4px rgba(139,92,246,.15) !important;
+```
+
+}
+
+/* Sign In Button */
+.btn-success,
+button[type=submit] {
+
+```
+background: #22c55e !important;
+
+border-color: #22c55e !important;
+
+border-radius: 10px !important;
+
+padding: 12px 30px !important;
+
+font-weight: 600 !important;
+
+font-size: 15px !important;
+
+transition: all .2s ease;
+```
+
+}
+
+.btn-success:hover,
+button[type=submit]:hover {
+
+```
+transform: translateY(-1px);
+
+box-shadow:
+    0 8px 20px rgba(34,197,94,.25);
+```
+
+}
+
+/* Links */
+a {
+color: #3b82f6 !important;
+}
+
+a:hover {
+color: #2563eb !important;
+}
+
+/* Card Hover Effect */
+.panel,
+.panel-default {
+
+```
+border-radius: 16px !important;
+
+border: none !important;
+
+box-shadow:
+    0 10px 35px rgba(0,0,0,.08) !important;
+```
+
+}
