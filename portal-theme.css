@@ -200,3 +200,31 @@ box-shadow:
 ```
 
 }
+/* Welcome Banner */
+
+body::before {
+    content: "Welcome to Software@Work\A Customer Portal\A\A Access your tickets, knowledge base, and more.";
+    white-space: pre-line;
+
+    display: block;
+
+    width: 850px;
+
+    margin: 40px auto 30px auto;
+
+    background: #ffffff;
+
+    border-radius: 16px;
+
+    padding: 35px;
+
+    text-align: center;
+
+    font-size: 18px;
+
+    color: #6b7280;
+
+    line-height: 1.8;
+
+    box-shadow: 0 10px 35px rgba(0,0,0,.08);
+}
